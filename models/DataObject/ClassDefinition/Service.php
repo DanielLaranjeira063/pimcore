@@ -288,7 +288,7 @@ class Service
      *
      * @internal
      */
-    public static function generateLayoutTreeFromArray(array $array, bool $throwException = false, bool $insideLocalizedField = false): Data\EncryptedField|bool|Data|Layout
+    public static function generateLayoutTreeFromArray(?array $array, bool $throwException = false, bool $insideLocalizedField = false): Data\EncryptedField|bool|Data|Layout
     {
         if ($array) {
             if ($title = $array['title'] ?? false) {
